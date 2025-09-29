@@ -1,0 +1,14 @@
+.btn-accion{
+    background: rgb(59, 126, 143);
+    color: white;
+}
+#id-titulo{
+    color: rgb(142, 231, 234);
+    text-align: center;
+}
+.card-body{
+    text-align: center;
+}
+.card{
+    justify-content: center;
+}
