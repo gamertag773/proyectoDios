@@ -5,8 +5,11 @@ import { Contact } from './pages/contact/contact';
 import { Products } from './pages/products/products';
 
 export const routes: Routes = [
+    /*esto nos hace iniciar ya desde el home q es la vista principal*/
+    {path:`**`, component: Home },
+    /*con esto vamos al home cuando estamos en otra vista*/
     {path: `home`, component: Home },
     {path: `about`, component: About },
     {path: `contact`, component: Contact },
-    {path: `products`, component: Products }
+    {path: `products`, component: Products },
 ];

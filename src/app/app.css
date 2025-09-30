@@ -1,0 +1,17 @@
+#barra-navegadora{
+   
+background:#041E42;
+}
+.nav-link{
+    color: #6CB4EE!important;
+}
+.navbar-brand{
+    color: #6CB4EE!important;
+}
+.btn:hover{
+    color:#6CB4EE!important;
+}
+.btn-outline{
+    color: #00356B;
+    background: #1F75FE;
+}

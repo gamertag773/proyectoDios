@@ -1,9 +1,9 @@
 .btn-accion{
-    background: rgb(59, 126, 143);
-    color: white;
+    background:#041E42;
+    color: #6CB4EE;
 }
 #id-titulo{
-    color: rgb(142, 231, 234);
+  color:#6CB4EE ; 
     text-align: center;
 }
 .card-body{
