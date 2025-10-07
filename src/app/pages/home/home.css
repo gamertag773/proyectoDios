@@ -1,17 +1,13 @@
-.btn-accion{
-    background:#041E42;
-    color: #6CB4EE;
-}
 #id-titulo{
   color:#6CB4EE ; 
     text-align: center;
 }
-.card-body{
-    text-align: center;
-}
-.card{
+.contenedorcarrusel{
+    display: flex;
     justify-content: center;
 }
-#carruselhome{
-    justify-content: center;
+#carouselExampleAutoplaying{
+    margin:0;
+    display: flex;
+    justify-content: space-around;
 }

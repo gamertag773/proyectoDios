@@ -3,55 +3,19 @@
     <h1 id="id-titulo">Tienda De Telefonos</h1>
     <h3>Equipos Disponibles</h3>
 </div>
+<div class="container">
+  <div class="row">
+    <div *ngFor="let i of infotarjeta" class="col-3">
 
-<div id="tarjetasproducts" class="container overflow-hidden text-center">
-  <div class="row gy-5">
-    <div class="col-6">
-      <div class="p-3"><!--tarjeta1-->
-<div class="card" style="width: 18rem;">
-  <img src="../../../assets/iphone 15pro.webp" class="card-img-top" alt=".">
-  <div class="card-body">
-    <h5 class="card-title">Iphone 13 ProMax</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-accion">Ver mas</a>
-  </div>
-</div>
-</div>
-    </div>
-    <div class="col-6">
-      <div class="p-3"><!--tarjeta2-->
-<div class="card" style="width: 18rem;">
-  <img src="../../../assets/iphone 15pro.webp" class="card-img-top" alt=".">
-  <div class="card-body">
-    <h5 class="card-title">Iphone 11 ProMax</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-accion">Ver mas</a>
-  </div>
-</div></div>
-    </div>
-    <div class="col-6">
-      <div class="p-3"><!--tarjeta3-->
-<div class="card" style="width: 18rem;">
-  <img src="../../../assets/iphone 15pro.webp" class="card-img-top" alt=".">
-  <div class="card-body">
-    <h5 class="card-title">Iphone 15 ProMax</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-accion">Ver mas</a>
-  </div>
-</div></div>
-    </div>
-    <div class="col-6">
-      <div class="p-3"><!--tarjeta4-->
-<div class="card" style="width: 18rem;">
-  <img src="../../../assets/iphone 15pro.webp" class="card-img-top" alt=".">
-  <div class="card-body">
-    <h5 class="card-title">Iphone 17 ProMax</h5>
-    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card’s content.</p>
-    <a href="#" class="btn btn-accion">Ver mas</a>
-  </div>
-</div></div>
+      <div class="card" style="width: 18rem;">
+        <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
+        <div class="card-body">
+          <h5 class="card-title">{{i.titulo}}</h5>
+          <p class="card-text">{{i.descripcion}} - {{i.anualpublication}}</p>
+
+          <a href="#" class="btn btn-primary">Ver mas</a>
+        </div>
+      </div>
     </div>
   </div>
 </div>
-
-

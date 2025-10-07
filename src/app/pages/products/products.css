@@ -5,3 +5,27 @@ text-align: center;
 #tarjetasproducts{
     justify-content: center;
 }
+.title{
+    text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    /*1rem = 16px */
+    padding: 1rem;
+}
+img{
+    height: 20rem;
+    /*propiedad para ajustar tamalo al contenido y mantener la calidad */
+    object-fit: cover;
+}
+/*pantalla de computadora*/
+@media (min-width:751px){
+    .card{
+       width: 16rem;
+       margin-top: 20px;
+    }
+    .title{
+        color: red;
+    }
+}
