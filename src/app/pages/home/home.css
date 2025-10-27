@@ -1,8 +1,8 @@
 #id-titulo{
-  color:#6CB4EE ; 
+  color:#ffffff ; 
     text-align: center;
 }
-.contenedorcarrusel{
+/* .contenedorcarrusel{
     display: flex;
     justify-content: center;
 }
@@ -10,4 +10,7 @@
     margin:0;
     display: flex;
     justify-content: space-around;
-}
+} */
+ .carousel-item img{
+    object-fit: contain;
+ }

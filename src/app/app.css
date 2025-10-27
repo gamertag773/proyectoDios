@@ -1,17 +1,20 @@
-#barra-navegadora{
-   
-background:#041E42;
+#barra-navegadora {
+    background: #000000;
 }
-.nav-link{
-    color: #6CB4EE!important;
+
+.nav-link {
+    color: #ffffff !important;
 }
-.navbar-brand{
-    color: #6CB4EE!important;
+
+.navbar-brand {
+    color: #ffffff !important;
 }
-.btn:hover{
-    color:#6CB4EE!important;
+
+.btn:hover {
+    color: #000000 !important;
 }
-.btn-outline{
-    color: #00356B;
+
+.btn-outline {
+    color: #000000;
     background: #1F75FE;
 }
