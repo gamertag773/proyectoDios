@@ -9,16 +9,17 @@
         <img src="{{i.img}}" class="card-img-top" alt="{{i.alt}}">
         <div class="card-body">
           <h5 class="card-title">{{i.titulo}}</h5>
-          <p class="card-text">{{i.descripcion}} - {{i.anualpublication}}</p>
-
-          <!-- Button trigger modal -->
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vermasinfo"
+          <p class="card-text">{{i.precio}} - {{i.anualpublication}}</p>
+          <div id="botonesproducts">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vermasinfo"
             (click)="vermas(i)">
             Ver Mas 
           </button>
           <button type="button" class="btn btn-primary">
             Comprar 
           </button>
+        </div>
         </div>
       </div>
     </div>
@@ -35,7 +36,7 @@
       </div>
       <div class="modal-body">
         <img src="{{tarjetaseleccionada?.img}}" alt="{{tarjetaseleccionada?.alt}}">
-        {{tarjetaseleccionada?.descripcion}}
+        {{tarjetaseleccionada?.precio}}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>

@@ -22,7 +22,7 @@ export class Products {
         img: "../../../assets/iphoneairspaceblack.webp",
         alt: "iphone Air",
         titulo: "iphone Air",
-        descripcion: "iphone Air a la venta",
+        precio: 999,
         anualpublication: 2025
       },
       {
@@ -30,7 +30,7 @@ export class Products {
         img: "../../../assets/iphone17white.webp",
         alt: "iphone17",
         titulo: "iphone 17",
-        descripcion: "iphone 17 a la venta",
+        precio: 799,
         anualpublication: 2025
       },
       {
@@ -38,7 +38,7 @@ export class Products {
         img: "../../../assets/iphone17prodeepblue.webp",
         alt: "iphone17pro",
         titulo: "iphone 17 Pro",
-        descripcion: "iphone 17 pro a la venta",
+        precio: 1099,
         anualpublication: 2025
       },
       {
@@ -46,7 +46,7 @@ export class Products {
         img: "../../../assets/iphone16eblack.webp",
         alt: "iphone16e",
         titulo: "iphone 16e",
-        descripcion: "iphone 16e a la venta",
+        precio: 599,
         anualpublication: 2025
       },
       {
@@ -54,7 +54,7 @@ export class Products {
         img: "../../../assets/airpodspro3.jpg",
         alt: "airpods pro3",
         titulo: "airpods pro3",
-        descripcion: "airpods pro3 a la venta",
+        precio: 249,
         anualpublication: 2025
       },
       {
@@ -62,23 +62,23 @@ export class Products {
         img: "../../../assets/ipadprofinish.webp",
         alt: "ipadpro",
         titulo: "ipad pro",
-        descripcion: "ipad pro a la venta",
+        precio: 999,
         anualpublication: 2025
       },
       {
         id: "2c",
-        img: "../../../assets/macbookpro11.png",
-        alt: "macbook pro",
-        titulo: "macbook pro",
-        descripcion: "macbook pro a la venta",
+        img: "../../../assets/watchultra.jpg",
+        alt: "watch ultra",
+        titulo: "watch ultra",
+        precio: 799,
         anualpublication: 2025
       },
       {
         id: "2d",
-        img: "../../../assets/s11case.jpg",
+        img: "../../../assets/watchs11.jpg",
         alt: "apple watch",
         titulo: "apple watch s11",
-        descripcion: "apple watch s11 a la venta",
+        precio: 399,
         anualpublication: 2025
       },
     ]
