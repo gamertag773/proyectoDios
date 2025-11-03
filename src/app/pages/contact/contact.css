@@ -1,4 +1,4 @@
-#infocontacto{
+/* #infocontacto{
     text-align: center;
     color: white;
 }
@@ -6,4 +6,109 @@ img{
     height: 100px;
     width: 100px;
     
+} */
+/* ====== ESTILOS GENERALES DE LA SECCIÓN ====== */
+
+/* Caja principal que contiene todo el bloque de contacto */
+.contact-container {
+    text-align: center;
+    /* Centra el texto y los botones */
+    padding: 40px 20px;
+    /* Espacio interno alrededor del contenido */
+    background-color: #fff;
+    /* Fondo blanco para destacar la sección */
+    max-width: 600px;
+    /* Ancho máximo de la caja */
+    margin: 50px auto;
+    /* Centra la caja horizontalmente y deja espacio arriba/abajo */
+    border-radius: 10px;
+    /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    /* Sombra suave para dar efecto de tarjeta */
+}
+
+/* Estilo del título */
+.contact-container h2 {
+    margin-bottom: 10px;
+    /* Espacio debajo del título */
+    color: #333;
+    /* Color gris oscuro */
+}
+
+/* Estilo del texto descriptivo */
+.contact-container p {
+    margin-bottom: 30px;
+    /* Espacio debajo del párrafo */
+    color: #555;
+    /* Gris medio */
+}
+
+/* ====== CONTENEDOR DE BOTONES ====== */
+.buttons {
+    display: flex;
+    /* Coloca los botones en fila */
+    justify-content: center;
+    /* Centra los botones horizontalmente */
+    gap: 15px;
+    /* Espacio entre botones */
+    flex-wrap: wrap;
+    /* Si la pantalla es chica, los botones bajan a otra línea */
+}
+
+/* Los enlaces que envuelven los botones */
+.buttons a {
+    text-decoration: none;
+    /* Quita el subrayado típico de los enlaces */
+}
+
+/* ====== ESTILOS DE LOS BOTONES ====== */
+.buttons button {
+    padding: 12px 20px;
+    /* Espacio interno del botón */
+    font-size: 16px;
+    /* Tamaño de letra */
+    border: none;
+    /* Sin borde */
+    border-radius: 6px;
+    /* Bordes redondeados */
+    cursor: pointer;
+    /* Cambia el cursor a "mano" al pasar por encima */
+    color: white;
+    /* Texto en blanco */
+    transition: background-color 0.3s ease;
+    /* Animación suave al cambiar color */
+}
+.buttons img{
+    width: 100px;
+}
+
+/* ====== COLORES PERSONALIZADOS POR RED SOCIAL ====== */
+.facebook {
+    background-color: #ffffff;
+    /* Azul característico de Facebook */
+}
+
+.facebook:hover {
+    background-color: #ffffff;
+    /* Azul más oscuro al pasar el mouse */
+}
+
+.tiktok {
+    background-color: #ffffff;
+    /* Celeste característico de Twitter */
+}
+
+.tiktok:hover {
+    background-color: #fffbfb;
+    /* Celeste más oscuro al pasar el mouse */
+}
+
+.instagram {
+    background-color: #ffffff;
+    /* Rosa característico de Instagram */
+}
+
+.instagram:hover {
+    background-color: #ffffff;
+    /* Rosa más oscuro al pasar el mouse */
 }
