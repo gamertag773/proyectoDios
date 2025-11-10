@@ -5,6 +5,7 @@ import { Contact } from './pages/contact/contact';
 import { Products } from './pages/products/products';
 import { Galeri } from './pages/galeri/galeri';
 import { Oferts } from './pages/oferts/oferts';
+import { NewProduct } from './pages/products/secciones/new-product/new-product';
 
 export const routes: Routes = [
     /*esto nos hace iniciar ya desde el home q es la vista principal*/
@@ -16,4 +17,5 @@ export const routes: Routes = [
     {path: `products`, component: Products },
     {path: `galeri`, component: Galeri},
     {path: `oferts`, component: Oferts},
+    {path: `new-products`, component: NewProduct},
 ];

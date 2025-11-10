@@ -1,6 +1,30 @@
-<div id="infoabout" class="flex">
-    <h1>Sobre Nosotros</h1>
-    <p>Somos un emprendimiento nuevo de venta de dispoitivos apple</p>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo, sapiente et doloremque nesciunt facilis tempora nobis dolorum, nisi quod esse itaque harum id molestiae aliquid? Inventore quod recusandae a, possimus, dolore esse quibusdam sunt, laboriosam accusantium asperiores sed? Facere vitae provident voluptatum minus? Quae error debitis totam. Officia, numquam!</p>
-    <img src="../../../assets/equipo de trabajo feliz.jpg" alt="...">
+<!-- Contenedor principal con margen vertical -->
+<div id="infoabout" class="container my-5">
+  
+  <!-- Fila de Bootstrap que alinea verticalmente los elementos al centro -->
+  <div class="row align-items-center about-container p-4 rounded shadow">
+    
+    <!-- Columna de texto (ocupa 6 columnas en pantallas grandes) -->
+    <div class="col-lg-6 text-light">
+      <!-- Título principal -->
+      <h1 class="mb-3">Sobre Nosotros</h1>
+      
+      <!-- Subtítulo introductorio con fuente un poco más grande -->
+      <p class="fs-5">
+        Somos un emprendimiento nuevo de venta de dispositivos Apple
+      </p>
+      
+      <!-- Texto descriptivo más largo en gris tenue -->
+      <p id="Lorem">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem quo, sapiente et doloremque nesciunt facilis tempora nobis dolorum, nisi quod esse itaque harum id molestiae aliquid? Inventore quod recusandae a, possimus, dolore esse quibusdam sunt, laboriosam accusantium asperiores sed? Facere vitae provident voluptatum minus? Quae error debitis totam. Officia, numquam!
+      </p>
+    </div>
+
+    <!-- Columna de imagen (ocupa 6 columnas en pantallas grandes) -->
+    <div class="col-lg-6 text-center mt-4 mt-lg-0">
+      <!-- Imagen del equipo con clases de Bootstrap para que sea fluida, redondeada y con sombra -->
+      <img src="../../../assets/equipo de trabajo feliz.jpg" alt="Equipo de trabajo" 
+           class="about-img img-fluid rounded shadow">
+    </div>
+  </div>
 </div>

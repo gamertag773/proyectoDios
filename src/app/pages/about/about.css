@@ -1,7 +1,33 @@
-#infoabout{
-text-align: center;
-    color: white;
+.about-container {
+    background-color: #1c1c1c;
+    /* Aplica un fondo gris muy oscuro al contenedor principal de la sección "About".
+    Esto ayuda a diferenciar visualmente la sección del resto de la página. */
 }
-img{
-    width: 1000px;
+
+.about-container h1 {
+    font-weight: 700;
+    /* Hace que el título sea más grueso (negrita fuerte) para destacar. */
+    letter-spacing: 1px;
+    /* Añade un pequeño espacio entre letras, dando un estilo más elegante. */
+}
+
+.about-container p {
+    line-height: 1.6;
+    /* Ajusta la altura de línea del texto, haciéndolo más legible y con mejor espaciado. */
+}
+
+.about-img {
+    max-width: 100%;
+    /* La imagen nunca excede el ancho de su contenedor, se adapta de forma responsiva. */
+    border: 2px solid #444;
+    /* Añade un borde gris oscuro alrededor de la imagen para enmarcarla. */
+    transition: transform 0.3s ease, border-color 0.3s ease;
+    /* Define una transición suave de 0.3 segundos para los cambios de escala y color de borde. */
+}
+
+.about-img:hover {
+    transform: scale(1.05);
+    /* Al pasar el mouse, la imagen se agranda un 5% creando un efecto dinámico. */
+    border-color: #888;
+    /* El borde cambia a un gris más claro, resaltando la interacción. */
 }

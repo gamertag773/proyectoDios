@@ -16,6 +16,7 @@ export class Products {
   public infotarjeta: Tarjeta[];
 
   constructor() {
+    //aca ingrese de forma amanual cada producto usando el modelo de tarjeta del tarjeta.ts de la carpeta models
     this.infotarjeta = [
       {
         id: "1a",

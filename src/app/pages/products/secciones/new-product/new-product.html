@@ -1,14 +1,46 @@
 <div class="container">
-    <h2>fsfssf</h2>
-    <!-- [formgroup]="formgroup" -->
-    <form >
+    <!-- Contenedor principal con clase de Bootstrap para dar márgenes y centrado -->
+    <h2>Formulario</h2>
+
+    <!-- El formulario está vinculado a un FormGroup de Angular llamado "nuevoproducto".
+         Cuando se envía, ejecuta el método crearProducto() -->
+    <form [formGroup]="nuevoproducto" (ngSubmit)="crearProducto()">
+
+        <!-- Campo de texto para el nombre del producto -->
         <div class="mb3">
             <label for="nombre" class="form-label">nombre</label>
-            <input id="nombre" type="text" class="form-control">
+            <input id="nombre" type="text" class="form-control" formControlName="nombre">
         </div>
-        <div class="mb3"></div>
-        <div class="mb3"></div>
-        <div class="mb3"></div>
-        <div class="mb3"></div>
+
+        <!-- Campo numérico para el precio -->
+        <div class="mb3">
+            <label for="precio" class="form-label">precio</label>
+            <input id="precio" type="number" class="form-control" formControlName="precio">
+        </div>
+
+        <!-- Campo de texto para la descripción -->
+        <div class="mb3">
+            <label for="descripcion" class="form-label">descripcion</label>
+            <input id="descripcion" type="text" class="form-control" formControlName="descripcion">
+        </div>
+
+        <!-- Campo de texto para la URL o ruta de la imagen -->
+        <div class="mb3">
+            <label for="imagen" class="form-label">imagen</label>
+            <input id="imagen" type="text" class="form-control" formControlName="imagen">
+        </div>
+
+        <!-- Campo de texto para el nombre de la imagen (ej: "producto1.jpg") -->
+        <div class="mb3">
+            <label for="nombreimagen" class="form-label">nombre imagen</label>
+            <input id="nombreimagen" type="text" class="form-control" formControlName="nombreimagen">
+        </div>
+
+        <!-- Botón de guardar:
+             Se deshabilita automáticamente si el formulario NO es válido.
+             Eso se controla con [disabled]="!nuevoproducto.valid" -->
+        <button type="submit" class="btn btn-primary w-100" [disabled]="!nuevoproducto.valid">
+            guardar
+        </button>
     </form>
 </div>
