@@ -24,6 +24,7 @@ export class Products {
         alt: "iphone Air",
         titulo: "iphone Air",
         precio: 999,
+        pdescuento: 0,
         anualpublication: 2025
       },
       {
@@ -32,6 +33,7 @@ export class Products {
         alt: "iphone17",
         titulo: "iphone 17",
         precio: 799,
+        pdescuento: 0,
         anualpublication: 2025
       },
       {
@@ -40,6 +42,7 @@ export class Products {
         alt: "iphone17pro",
         titulo: "iphone 17 Pro",
         precio: 1099,
+        pdescuento: 0,
         anualpublication: 2025
       },
       {
@@ -48,6 +51,7 @@ export class Products {
         alt: "iphone16e",
         titulo: "iphone 16e",
         precio: 599,
+        pdescuento: 0,
         anualpublication: 2025
       },
       {
@@ -56,6 +60,7 @@ export class Products {
         alt: "airpods pro3",
         titulo: "airpods pro3",
         precio: 249,
+        pdescuento: 0,
         anualpublication: 2025
       },
       {
@@ -64,6 +69,7 @@ export class Products {
         alt: "ipadpro",
         titulo: "ipad pro",
         precio: 999,
+        pdescuento: 0,
         anualpublication: 2025
       },
       {
@@ -72,6 +78,7 @@ export class Products {
         alt: "watch ultra",
         titulo: "watch ultra",
         precio: 799,
+        pdescuento: 0,
         anualpublication: 2025
       },
       {
@@ -80,6 +87,7 @@ export class Products {
         alt: "apple watch",
         titulo: "apple watch s11",
         precio: 399,
+        pdescuento: 0,
         anualpublication: 2025
       },
     ]

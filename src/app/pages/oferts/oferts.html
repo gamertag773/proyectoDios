@@ -10,7 +10,7 @@
         <div class="card-body">
           <!--INFORMACION QUE SE MUESTRA EN LA TARJETA-->
           <h5 class="card-title">{{i.titulo}}</h5>
-          <p class="card-text">{{i.precio}} - {{i.anualpublication}}</p>
+          <p class="card-text"> <s>{{i.precio}}</s> {{i.pdescuento}} - {{i.anualpublication}}</p>
           <div id="botonesproducts">
             <!-- Button trigger modal  DE LA TARJETA DEL PRODUCTO-->
             <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#vermasinfo"
@@ -40,7 +40,8 @@
       </div>
       <div class="modal-body">
         <img src="{{tarjetaseleccionada?.img}}" alt="{{tarjetaseleccionada?.alt}}">
-        {{tarjetaseleccionada?.precio}}
+        <s>{{tarjetaseleccionada?.precio}}</s> 
+        {{tarjetaseleccionada?.pdescuento}}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
