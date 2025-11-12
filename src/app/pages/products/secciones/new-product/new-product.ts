@@ -20,7 +20,8 @@ export class NewProduct {
   nuevoproducto = new FormGroup({
     nombre: new FormControl('', Validators.required),        // Campo obligatorio de tipo texto
     descripcion: new FormControl('', Validators.required),   // Campo obligatorio de tipo texto
-    precio: new FormControl(null, Validators.required),      // Campo obligatorio de tipo numérico
+    precio: new FormControl(null, Validators.required), // Campo obligatorio de tipo numérico
+    pdescuento: new FormControl(null),     // Campo obligatorio de tipo numérico
     imagen: new FormControl(''),
     nombreimagen: new FormControl(''),  // Campo opcional para la URL de la imagen
 
@@ -40,6 +41,7 @@ export class NewProduct {
         nombre: this.nuevoproducto.value.nombre!,
         descripcion: this.nuevoproducto.value.descripcion!,
         precio: this.nuevoproducto.value.precio!,
+        pdescuento: this.nuevoproducto.value.pdescuento!,
         imagen: this.nuevoproducto.value.imagen!,
         nombreimagen: this.nuevoproducto.value.nombreimagen!,
         alt: this.nuevoproducto.value.alt!,
@@ -47,6 +49,7 @@ export class NewProduct {
 
       // Agrega el nuevo producto a la colección
       this.coleccionProductos.push(nuevoproducto);
+      alert(`Se creo un nuevo producto: ${nuevoproducto.nombre}`)
 
       // Muestra en consola el producto agregado y la colección actual
       console.log('producto agregado:', nuevoproducto);

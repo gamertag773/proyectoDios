@@ -9,44 +9,57 @@ import { Tarjeta } from '../../models/tarjeta';
   styleUrl: './oferts.css'
 })
 export class Oferts {
- /* 
-  propiedad publica/privada
-  */
+  /* 
+   propiedad publica/privada
+   */
   public infotarjeta: Tarjeta[];
 
   constructor() {
     //aca ingrese de forma amanual cada producto usando el modelo de tarjeta del tarjeta.ts de la carpeta models
     this.infotarjeta = [
       {
-        id: "1a",
-        img: "../../../assets/iphoneairspaceblack.webp",
-        alt: "iphone Air",
-        titulo: "iphone Air",
+        id: "2a",
+        img: "../../../assets/macbook14inch.jpeg",
+        alt: "macbook14inch",
+        titulo: "Macbook 14 inch",
         precio: 999,
+        pdescuento: 899,
         anualpublication: 2025
       },
       {
-        id: "1b",
-        img: "../../../assets/iphone17white.webp",
-        alt: "iphone17",
-        titulo: "iphone 17",
-        precio: 799,
+        id: "2b",
+        img: "../../../assets/imacpurple24inch.jpeg",
+        alt: "imacpurple",
+        titulo: "Imac 24 inch",
+        precio: 1299,
+        pdescuento: 1199,
         anualpublication: 2025
       },
       {
-        id: "1c",
-        img: "../../../assets/iphone17prodeepblue.webp",
-        alt: "iphone17pro",
-        titulo: "iphone 17 Pro",
-        precio: 1099,
-        anualpublication: 2025
-      },
-      {
-        id: "1d",
-        img: "../../../assets/iphone16eblack.webp",
-        alt: "iphone16e",
-        titulo: "iphone 16e",
+        id: "2c",
+        img: "../../../assets/mac-mini-silver.jpeg",
+        alt: "mac-mini-silver",
+        titulo: "Mac mini silver",
         precio: 599,
+        pdescuento: 499,
+        anualpublication: 2025
+      },
+      {
+        id: "2d",
+        img: "../../../assets/airtag-4pack.png",
+        alt: "airtag",
+        titulo: "Airtag 4 pack",
+        precio: 99,
+        pdescuento: 89,
+        anualpublication: 2025
+      },
+      {
+        id: "2e",
+        img: "../../../assets/homepod-mini-blue.jpeg",
+        alt: "homepod-mini",
+        titulo: "Homepod-mini-blue",
+        precio: 99,
+        pdescuento: 89,
         anualpublication: 2025
       },
     ]
