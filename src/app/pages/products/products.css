@@ -1,35 +1,68 @@
-#tituloproducts{
-text-align: center;
-color: white;
+h2 {
+  color: white;
+  text-align: center;
 }
-#tarjetasproducts{
-    justify-content: center;
+
+#tituloproducts {
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
 }
-.title{
-    text-align: center;
+
+#tarjetasproducts {
+  justify-content: center;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    /*1rem = 16px */
-    padding: 1rem;
+
+.title {
+  text-align: center;
 }
-img{
-    height: 20rem;
-    /*propiedad para ajustar tamalo al contenido y mantener la calidad */
-    object-fit: cover;
+
+.container {
+  /* Bootstrap ya maneja display y ancho, solo dejamos padding */
+  padding: 1rem;
 }
-#botonesproducts button{
-    margin: 4px;
+
+/* Filtros: mismo estilo y ancho */
+.input-group {
+  max-width: 300px; /* ancho uniforme */
 }
-/*pantalla de computadora*/
-@media (min-width:751px){
-    .card{
-       width: 100%;
-       height: 100%;
-      /* margin-top: 20px; */
-    }
-    .title{
-        color: red;
-    }
+
+
+
+/* Tarjetas */
+.card {
+  min-width: 250px;
+  max-width: 18rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* botones siempre abajo */
+  height: 100%; /* altura uniforme */
+}
+
+/* Imagen dentro de tarjeta */
+img {
+  height: 20rem;
+  object-fit: cover; /* ajusta tamaño manteniendo calidad */
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+/* Botones dentro de tarjeta */
+#botonesproducts button {
+  margin: 4px;
+}
+
+/* Ajustes responsivos */
+@media (min-width: 576px) {
+  .card {
+    margin: 0.5rem; /* separación natural entre tarjetas */
+  }
+}
+
+@media (min-width: 751px) {
+  .card {
+    width: 100%;
+    height: 100%;
+  }
 }

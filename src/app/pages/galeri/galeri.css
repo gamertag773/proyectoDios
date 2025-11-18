@@ -1,40 +1,50 @@
+h2 {
+  color: white;
+  text-align: center;
+}
 
-h2{
-    color: white;
-    text-align: center;
+#tituloproducts {
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
 }
-#tituloproducts{
-text-align: center;
-color: white;
+
+.title {
+  text-align: center;
 }
-#tarjetasproducts{
-    justify-content: center;
+
+/* 🔑 Contenedor: dejamos que Bootstrap maneje el flex */
+.container {
+  padding: 1rem;
 }
-.title{
-    text-align: center;
+
+/* 🔑 Filtros: mismo ancho y color negro */
+.input-group {
+  max-width: 300px;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    /*1rem = 16px */
-    padding: 1rem;
+
+.input-group-text.bg-dark {
+  background-color: #000 !important;
+  color: #fff !important;
 }
-img{
-    height: 20rem;
-    /*propiedad para ajustar tamalo al contenido y mantener la calidad */
-    object-fit: cover;
+
+.form-select.border-dark {
+  border-color: #000 !important;
 }
-#botonesproducts button{
-    margin: 4px;
+
+/* Tarjetas */
+.card {
+  min-width: 250px;
+  max-width: 18rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
 }
-/*pantalla de computadora*/
-@media (min-width:751px){
-    .card{
-       width: 100%;
-       height: 100%;
-      /* margin-top: 20px; */
-    }
-    .title{
-        color: red;
-    }
+
+/* Imagen dentro de tarjeta */
+.card img {
+  height: 20rem;
+  object-fit: cover;
 }

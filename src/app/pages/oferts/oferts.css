@@ -1,40 +1,78 @@
+h2 {
+  color: white;
+  text-align: center;
+}
 
-h2{
-    color: white;
-    text-align: center;
+#tituloproducts {
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem;
 }
-#tituloproducts{
-text-align: center;
-color: white;
+
+#tarjetasproducts {
+  justify-content: center;
 }
-#tarjetasproducts{
-    justify-content: center;
+
+.title {
+  text-align: center;
 }
-.title{
-    text-align: center;
+
+/* 🔑 Contenedor: dejamos que Bootstrap maneje el flex */
+.container {
+  padding: 1rem;
 }
-.container{
-    display: flex;
-    justify-content: center;
-    /*1rem = 16px */
-    padding: 1rem;
+
+/* 🔑 Filtros: mismo ancho y color negro */
+.input-group {
+  max-width: 300px;
 }
-img{
-    height: 20rem;
-    /*propiedad para ajustar tamalo al contenido y mantener la calidad */
-    object-fit: cover;
+
+.input-group-text.bg-dark {
+  background-color: #000 !important; /* negro */
+  color: #fff !important;           /* texto blanco */
 }
-#botonesproducts button{
-    margin: 4px;
+
+.form-select.border-dark {
+  border-color: #000 !important;
 }
-/*pantalla de computadora*/
-@media (min-width:751px){
-    .card{
-       width: 100%;
-       height: 100%;
-      /* margin-top: 20px; */
-    }
-    .title{
-        color: red;
-    }
+
+/* Tarjetas */
+.card {
+  min-width: 250px;
+  max-width: 18rem;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* botones siempre abajo */
+  height: 100%; /* altura uniforme */
+}
+
+/* Imagen dentro de tarjeta */
+.card img {
+  height: 20rem;
+  object-fit: cover; /* ajusta tamaño manteniendo calidad */
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
+/* Botones dentro de tarjeta */
+#botonesproducts button {
+  margin: 4px;
+}
+
+/* Ajustes responsivos */
+@media (min-width: 576px) {
+  .card {
+    margin: 0.5rem; /* separación natural entre tarjetas */
+  }
+}
+
+@media (min-width: 751px) {
+  .card {
+    width: 100%;
+    height: 100%;
+  }
+  .title {
+    color: red;
+  }
 }
