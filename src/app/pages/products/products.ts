@@ -24,6 +24,11 @@ export class Products {
       { id: "2b", img: "../../../assets/ipadprofinish.webp", alt: "ipadpro", titulo: "ipad pro", precio: 999, pdescuento: 0, anualpublication: 2025 },
       { id: "2c", img: "../../../assets/watchultra.jpg", alt: "watch ultra", titulo: "watch ultra", precio: 799, pdescuento: 0, anualpublication: 2025 },
       { id: "2d", img: "../../../assets/watchs11.jpg", alt: "apple watch", titulo: "apple watch s11", precio: 399, pdescuento: 0, anualpublication: 2025 },
+      { id: "3b", img: "../../../assets/ipad-air-blue.webp", alt: "ipadair", titulo: "iPad Air", precio: 699, pdescuento: 0, anualpublication: 2024 },
+      { id: "4c", img: "../../../assets/watch-se-2023.jpeg", alt: "apple watch se", titulo: "apple watch SE", precio: 299, pdescuento: 0, anualpublication: 2023 },
+      { id: "2e", img: "../../../assets/airpods-max.jpeg", alt: "airpods max", titulo: "airpods max", precio: 549, pdescuento: 0, anualpublication: 2024 },
+
+
     ];
   }
 
